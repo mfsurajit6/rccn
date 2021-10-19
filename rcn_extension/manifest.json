@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Ring Central Call Notifier",
+    "description": "Get notification on call to ring central number",
+    "version": "1.0",
+    "icons": {"128": "images/RCN_128.png"},
+    "browser_action": {
+        "default_icon": "images/RCN_19.png"
+    },
+    "background": {
+        "scripts": ["popup.js"],
+        "persistent": true
+    },
+    "permissions": ["notifications"]
+}
