@@ -4,32 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Django Chanels - Test Project</title>
+    <title>RCCN</title>
 </head>
 <body>
-    <h1 id="app">{{text}}</h1>
-    <button onclick="callAccepted()">Click</button>
-    <script>
-        // var socket = new WebSocket('ws://localhost:1234/ws/get_callers/');
-
-        // socket.onmessage = function(event){
-            // var data = JSON.parse(event.data);
-            // console.log(data);
-            // document.getElementById("app").innerHTML = data.message;
-        //}
-
-        function callAccepted(){
-          var xhr = new XMLHttpRequest();
-          xhr.open('GET','http://localhost:1234/acceptCall/+1234567890', true);
-          xhr.send();
-          xhr.onload = function(){
-            console.log(this.status);
-            if(this.status == 200){
-                console.log(this.responseText);
-            }
-          }
-        }
-
-    </script>
+    {% comment %} <h1 id="app">{{text}}</h1> {% endcomment %}
+    <h1>Welcome to Ring Central Call Notifier</h1>
 </body>
 </html>
